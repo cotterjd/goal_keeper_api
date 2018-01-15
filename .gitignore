@@ -1,0 +1,7 @@
+node_modules
+updateDb/node_modules
+.vscode
+public/components
+dist
+.DS_Store
+

@@ -1,0 +1,37 @@
+2018-01-09T22:32:18.497Z - info: Initializing jsreport@1.9.2 in development mode using configuration file: none
+2018-01-09T22:32:18.497Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-09T22:32:18.499Z - info: Searching for available extensions in /Users/calebbriggs/code/scolasticus_api/
+2018-01-09T22:32:18.501Z - info: Extensions location cache not found, crawling directories
+2018-01-09T22:32:19.207Z - info: Found 30 extensions
+2018-01-09T22:32:19.215Z - debug: Writing extension locations cache to /var/folders/4w/kkm2q98d38zdbm0cygrfpzk40000gn/T/jsreport/core/locations.json
+2018-01-09T22:32:19.216Z - debug: Discovered 30 extensions
+2018-01-09T22:32:19.217Z - info: Using extension jsrender
+2018-01-09T22:32:19.217Z - info: Using extension fop-pdf
+2018-01-09T22:32:19.223Z - info: Using extension handlebars
+2018-01-09T22:32:19.224Z - info: Using extension templates
+2018-01-09T22:32:19.232Z - info: Using extension html-to-xlsx
+2018-01-09T22:32:19.306Z - info: Using extension data
+2018-01-09T22:32:19.308Z - info: Using extension phantom-pdf
+2018-01-09T22:32:19.342Z - info: Using extension text
+2018-01-09T22:32:19.343Z - info: Using extension assets
+2018-01-09T22:32:19.354Z - info: Using extension scripts
+2018-01-09T22:32:19.356Z - info: Using extension xlsx
+2018-01-09T22:32:19.526Z - info: Creating memory store
+2018-01-09T22:32:19.539Z - info: reporter initialized
+2018-01-09T22:32:19.540Z - info: Starting rendering request 1 (user: null) requestId=1
+2018-01-09T22:32:19.541Z - info: Rendering anonymous template { recipe:phantom-pdf,engine:jsrender} requestId=1
+2018-01-09T22:32:19.541Z - debug: Inline data specified. requestId=1
+2018-01-09T22:32:19.545Z - debug: Rendering engine jsrender requestId=1
+2018-01-09T22:32:19.683Z - debug: Compiled template not found in the cache, compiling timestamp=Tue Jan 09 2018 16:32:19 GMT-0600 (CST), requestId=1
+2018-01-09T22:32:19.683Z - debug: Executing recipe phantom-pdf requestId=1
+2018-01-09T22:32:19.791Z - error: Error when processing render request Error during rendering report: Command failed: /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/4w/kkm2q98d38zdbm0cygrfpzk40000gn/T/jsreport/f40da150-f58c-11e7-9b52-1f5827da5a2esettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/4w/kkm2q98d38zdbm0cygrfpzk40000gn/T/jsreport/f40da150-f58c-11e7-9b52-1f5827da5a2esettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:272:12)
+    at emitTwo (events.js:135:13)
+    at ChildProcess.emit (events.js:224:7)
+    at maybeClose (internal/child_process.js:943:16)
+    at Socket.stream.socket.on (internal/child_process.js:363:11)
+    at emitOne (events.js:125:13)
+    at Socket.emit (events.js:221:7)
+    at Pipe._handle.close [as _onclose] (net.js:558:12) requestId=1

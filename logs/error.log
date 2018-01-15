@@ -1,0 +1,11 @@
+2018-01-09T22:32:19.791Z - error: Error when processing render request Error during rendering report: Command failed: /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/4w/kkm2q98d38zdbm0cygrfpzk40000gn/T/jsreport/f40da150-f58c-11e7-9b52-1f5827da5a2esettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/calebbriggs/code/scolasticus_api/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/4w/kkm2q98d38zdbm0cygrfpzk40000gn/T/jsreport/f40da150-f58c-11e7-9b52-1f5827da5a2esettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:272:12)
+    at emitTwo (events.js:135:13)
+    at ChildProcess.emit (events.js:224:7)
+    at maybeClose (internal/child_process.js:943:16)
+    at Socket.stream.socket.on (internal/child_process.js:363:11)
+    at emitOne (events.js:125:13)
+    at Socket.emit (events.js:221:7)
+    at Pipe._handle.close [as _onclose] (net.js:558:12) requestId=1
